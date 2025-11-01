@@ -20,54 +20,25 @@ python quick_demo.py                    # Fast demo (30 assets, 6 months)
 python main.py --tickers 200 --save     # Full analysis with outputs
 ```
 
-## 📸 Sample Visualizations
-
-<table>
-  <tr>
-    <td width="50%">
-      <img src="screenshots/01_wasserstein_distance_matrix.png" alt="Wasserstein Distance Matrix" />
-      <p align="center"><b>Wasserstein Distance Matrix</b><br/>Temporal evolution of topology</p>
-    </td>
-    <td width="50%">
-      <img src="screenshots/12_persistence_diagram.png" alt="Persistence Diagram" />
-      <p align="center"><b>Persistence Diagram</b><br/>Birth-death analysis of features</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="screenshots/07_minimum_spanning_tree.png" alt="MST" />
-      <p align="center"><b>Minimum Spanning Tree</b><br/>Core market structure</p>
-    </td>
-    <td width="50%">
-      <img src="screenshots/14_topology_evolution.png" alt="Evolution" />
-      <p align="center"><b>Topology Evolution</b><br/>Time series of features</p>
-    </td>
-  </tr>
-</table>
-
-> 📖 **[See Full Gallery](#-visualization-gallery)** with 19 visualizations and detailed explanations
-
 ---
 
 ## 📋 Table of Contents
 
 1. [Overview](#overview)
-2. [Sample Visualizations](#sample-visualizations)
-3. [Practical Examples](#practical-examples)
-4. [Theoretical Foundation](#theoretical-foundation)
-5. [System Architecture](#system-architecture)
-6. [Data Pipeline](#data-pipeline)
-7. [Mathematical Framework](#mathematical-framework)
-8. [Implementation Details](#implementation-details)
-9. [Experimental Results](#experimental-results)
-10. [Performance Metrics](#performance-metrics)
-11. [Analysis Modules](#analysis-modules)
-12. [Running Analysis](#running-analysis)
-13. [Visualization Gallery](#visualization-gallery)
-14. [Installation](#installation)
-15. [API Reference](#api-reference)
-16. [Future Work](#future-work)
-17. [References](#references)
+2. [Practical Examples](#practical-examples)
+3. [Theoretical Foundation](#theoretical-foundation)
+4. [System Architecture](#system-architecture)
+5. [Data Pipeline](#data-pipeline)
+6. [Mathematical Framework](#mathematical-framework)
+7. [Implementation Details](#implementation-details)
+8. [Experimental Results](#experimental-results)
+9. [Performance Metrics](#performance-metrics)
+10. [Analysis Modules](#analysis-modules)
+11. [Running Analysis](#running-analysis)
+12. [Visualization Gallery](#visualization-gallery)
+13. [Installation](#installation)
+14. [API Reference](#api-reference)
+15. [References](#references)
 
 ---
 
@@ -2288,39 +2259,6 @@ python advanced_demo.py
 - ✅ Summary report
 
 All outputs saved to `results/` directory.
-
----
-
-## 🚀 Future Work
-
-### Research Directions
-
-1. **Deep Learning Hybrid**
-   - Persistence images → CNN
-   - LSTM for regime prediction
-   - Transformer attention on loops
-
-2. **Streaming TDA**
-   - Incremental homology updates
-   - WebSocket integration
-   - Real-time alerting
-
-3. **Multi-scale Analysis**
-   - Wavelet decomposition
-   - TDA at each scale
-   - Cross-scale persistence
-
-4. **Advanced Topology**
-   - Zigzag persistence
-   - Persistent cohomology
-   - Mapper/Reeb graphs
-
-5. **Applications**
-   - Options surface topology
-   - Cross-market contagion
-   - Portfolio optimization
-
----
 
 ---
 
