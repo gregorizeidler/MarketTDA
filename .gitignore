@@ -46,3 +46,7 @@ Thumbs.db
 *.h5
 *.hdf5
 data/cache/
+*.log
+*.tmp
+*.bak
+# Temporary files
