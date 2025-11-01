@@ -22,20 +22,167 @@ python main.py --tickers 200 --save     # Full analysis with outputs
 
 ---
 
+## 🖼️ Visualization Gallery
+
+![Project Overview](screenshots/00_project_overview.png)
+
+### Distance Metrics & Comparisons
+
+#### Wasserstein Distance Matrix
+![Wasserstein Distance Matrix](screenshots/01_wasserstein_distance_matrix.png)
+
+*Temporal evolution of topological similarity between market states. Darker colors indicate higher Wasserstein distance (greater structural change). This matrix reveals periods of stability (blue blocks) and regime transitions (yellow/red regions).*
+
+---
+
+#### Persistence Landscapes
+![Persistence Landscapes](screenshots/02_persistence_landscapes.png)
+
+*Functional representation of persistence diagrams. Multiple landscape levels (λ₁, λ₂, ..., λ₅) capture the distribution of topological features across filtration scales. Used for statistical analysis and averaging of diagrams.*
+
+---
+
+#### Persistence Images
+![Persistence Images](screenshots/03_persistence_images.png)
+
+*Grid of vectorized persistence diagrams over time. Each image is a fixed-dimensional representation suitable for machine learning pipelines (CNNs, SVMs). Color intensity represents feature density in birth-persistence space.*
+
+---
+
+### Statistical Analysis
+
+#### Cross-Correlation Analysis
+![Cross-Correlation](screenshots/04_cross_correlation_analysis.png)
+
+*Lagged correlations between H₀, H₁, and H₂. Identifies temporal dependencies: Does H₂(t-k) predict H₁(t)? Strong correlations at specific lags reveal leading indicators for regime changes.*
+
+---
+
+#### Entropy Rate Evolution
+![Entropy Rate](screenshots/05_entropy_rate_evolution.png)
+
+*Rate of change of persistent entropy for each homology dimension. Positive rates indicate increasing topological complexity; negative rates signal simplification. Useful for detecting acceleration of structural changes.*
+
+---
+
+### Financial Integration
+
+#### Backtesting Results
+![Backtest Results](screenshots/06_backtest_results.png)
+
+*Performance comparison of topological trading strategies vs buy-and-hold. Shows cumulative returns and risk-adjusted metrics (Sharpe ratio, max drawdown). Topological signals demonstrate crisis avoidance capability.*
+
+---
+
+### Network Analysis
+
+#### Minimum Spanning Tree (MST)
+![MST](screenshots/07_minimum_spanning_tree.png)
+
+*Core market structure extracted from correlation matrix. Nodes = assets, edges = strongest correlations only. Reveals hierarchical organization, market leaders (high centrality), and sector clustering.*
+
+---
+
+#### Correlation Network
+![Correlation Network](screenshots/08_correlation_network.png)
+
+*Full network with threshold filtering (|r| > 0.5). Node size = degree centrality, edge thickness = correlation strength, edge color = positive (green) vs negative (red) correlation. Shows market connectivity patterns.*
+
+---
+
+#### Hierarchical Clustering Dendrogram
+![Dendrogram](screenshots/09_hierarchical_clustering.png)
+
+*Tree-based visualization of asset relationships. Height = correlation distance. Distinct branches represent natural groupings (sectors, factors). Useful for portfolio construction and diversification analysis.*
+
+---
+
+#### Regime Transition Sankey Diagram
+![Sankey Diagram](screenshots/10_regime_sankey_diagram.png)
+
+*Flow diagram of regime transitions over time. Width = transition frequency, color = stability (green = same regime, orange = different). Reveals dominant regimes and transition probabilities.*
+
+---
+
+### Topological Visualizations
+
+#### 3D Persistence Surface
+![3D Surface](screenshots/11_3d_persistence_surface.png)
+
+*Three-dimensional visualization of persistence features. Axes: birth time, death time, persistence (death - birth). Points colored by persistence value. Red diagonal plane = ephemeral features (birth ≈ death).*
+
+---
+
+#### Persistence Diagram
+![Persistence Diagram](screenshots/12_persistence_diagram.png)
+
+*Classic TDA visualization: birth vs death times of topological features. Points colored by dimension (H₀=blue, H₁=orange, H₂=green). Distance from diagonal = persistence (feature importance). Size ∝ persistence.*
+
+---
+
+#### Persistence Barcode
+![Barcode](screenshots/13_persistence_barcode.png)
+
+*Interval representation of persistence diagrams. Each bar = one topological feature, spanning from birth to death. Separate panels for H₀ (clusters), H₁ (loops), H₂ (voids). Long bars = persistent features.*
+
+---
+
+#### Topology Evolution Over Time
+![Evolution](screenshots/14_topology_evolution.png)
+
+*Time series of key topological metrics: H₀, H₁, H₂ counts and max persistence values. Red stars = anomalies (z-score > 2). Tracks structural changes in market over time.*
+
+---
+
+#### Regime Timeline
+![Regime Timeline](screenshots/15_regime_timeline.png)
+
+*Color-coded timeline showing regime classification for each temporal window. Visualizes regime persistence, transitions, and distribution. Aligned with topological features for correlation analysis.*
+
+---
+
+#### Betti Curves Heatmap
+![Betti Curves](screenshots/16_betti_curves_heatmap.png)
+
+*Heatmap showing evolution of Betti numbers across filtration scales and time. X-axis = time windows, Y-axis = filtration value, color intensity = number of features alive. Reveals topological complexity dynamics.*
+
+---
+
+#### Interactive Dashboard
+![Dashboard](screenshots/17_interactive_dashboard.png)
+
+*Multi-panel Plotly dashboard with interactive features (zoom, pan, hover). Displays H₀, H₁, H₂ metrics, persistence comparisons, entropy evolution, and current feature counts. Exportable to HTML for web deployment.*
+
+---
+
+#### 3D Point Cloud Visualization
+![Point Cloud 3D](screenshots/18_point_cloud_3d.png)
+
+*Three-dimensional projection of high-dimensional market returns using PCA. Each point = one trading day, colored by time or regime. Reveals geometric structure of market state space.*
+
+---
+
+#### Analysis Summary Report
+![Summary](screenshots/19_analysis_summary.png)
+
+*Comprehensive analysis output showing key findings: topological features statistics, regime distribution, anomalies detected, cross-correlations, and interpretation. Generated automatically by `advanced_demo.py`.*
+
+---
+
 ## 📋 Table of Contents
 
-1. [Overview](#overview)
-2. [Practical Examples](#practical-examples)
-3. [Theoretical Foundation](#theoretical-foundation)
-4. [System Architecture](#system-architecture)
-5. [Data Pipeline](#data-pipeline)
-6. [Mathematical Framework](#mathematical-framework)
-7. [Implementation Details](#implementation-details)
-8. [Experimental Results](#experimental-results)
-9. [Performance Metrics](#performance-metrics)
-10. [Analysis Modules](#analysis-modules)
-11. [Running Analysis](#running-analysis)
-12. [Visualization Gallery](#visualization-gallery)
+1. [Visualization Gallery](#visualization-gallery)
+2. [Overview](#overview)
+3. [Practical Examples](#practical-examples)
+4. [Theoretical Foundation](#theoretical-foundation)
+5. [System Architecture](#system-architecture)
+6. [Data Pipeline](#data-pipeline)
+7. [Mathematical Framework](#mathematical-framework)
+8. [Implementation Details](#implementation-details)
+9. [Experimental Results](#experimental-results)
+10. [Performance Metrics](#performance-metrics)
+11. [Analysis Modules](#analysis-modules)
+12. [Running Analysis](#running-analysis)
 13. [Installation](#installation)
 14. [API Reference](#api-reference)
 15. [References](#references)
@@ -43,8 +190,6 @@ python main.py --tickers 200 --save     # Full analysis with outputs
 ---
 
 ## 🎯 Overview
-
-![Project Overview](screenshots/00_project_overview.png)
 
 ### Core Innovation
 
@@ -2259,151 +2404,6 @@ python advanced_demo.py
 - ✅ Summary report
 
 All outputs saved to `results/` directory.
-
----
-
-## 🖼️ Visualization Gallery
-
-### Distance Metrics & Comparisons
-
-#### Wasserstein Distance Matrix
-![Wasserstein Distance Matrix](screenshots/01_wasserstein_distance_matrix.png)
-
-*Temporal evolution of topological similarity between market states. Darker colors indicate higher Wasserstein distance (greater structural change). This matrix reveals periods of stability (blue blocks) and regime transitions (yellow/red regions).*
-
----
-
-#### Persistence Landscapes
-![Persistence Landscapes](screenshots/02_persistence_landscapes.png)
-
-*Functional representation of persistence diagrams. Multiple landscape levels (λ₁, λ₂, ..., λ₅) capture the distribution of topological features across filtration scales. Used for statistical analysis and averaging of diagrams.*
-
----
-
-#### Persistence Images
-![Persistence Images](screenshots/03_persistence_images.png)
-
-*Grid of vectorized persistence diagrams over time. Each image is a fixed-dimensional representation suitable for machine learning pipelines (CNNs, SVMs). Color intensity represents feature density in birth-persistence space.*
-
----
-
-### Statistical Analysis
-
-#### Cross-Correlation Analysis
-![Cross-Correlation](screenshots/04_cross_correlation_analysis.png)
-
-*Lagged correlations between H₀, H₁, and H₂. Identifies temporal dependencies: Does H₂(t-k) predict H₁(t)? Strong correlations at specific lags reveal leading indicators for regime changes.*
-
----
-
-#### Entropy Rate Evolution
-![Entropy Rate](screenshots/05_entropy_rate_evolution.png)
-
-*Rate of change of persistent entropy for each homology dimension. Positive rates indicate increasing topological complexity; negative rates signal simplification. Useful for detecting acceleration of structural changes.*
-
----
-
-### Financial Integration
-
-#### Backtesting Results
-![Backtest Results](screenshots/06_backtest_results.png)
-
-*Performance comparison of topological trading strategies vs buy-and-hold. Shows cumulative returns and risk-adjusted metrics (Sharpe ratio, max drawdown). Topological signals demonstrate crisis avoidance capability.*
-
----
-
-### Network Analysis
-
-#### Minimum Spanning Tree (MST)
-![MST](screenshots/07_minimum_spanning_tree.png)
-
-*Core market structure extracted from correlation matrix. Nodes = assets, edges = strongest correlations only. Reveals hierarchical organization, market leaders (high centrality), and sector clustering.*
-
----
-
-#### Correlation Network
-![Correlation Network](screenshots/08_correlation_network.png)
-
-*Full network with threshold filtering (|r| > 0.5). Node size = degree centrality, edge thickness = correlation strength, edge color = positive (green) vs negative (red) correlation. Shows market connectivity patterns.*
-
----
-
-#### Hierarchical Clustering Dendrogram
-![Dendrogram](screenshots/09_hierarchical_clustering.png)
-
-*Tree-based visualization of asset relationships. Height = correlation distance. Distinct branches represent natural groupings (sectors, factors). Useful for portfolio construction and diversification analysis.*
-
----
-
-#### Regime Transition Sankey Diagram
-![Sankey Diagram](screenshots/10_regime_sankey_diagram.png)
-
-*Flow diagram of regime transitions over time. Width = transition frequency, color = stability (green = same regime, orange = different). Reveals dominant regimes and transition probabilities.*
-
----
-
-### Topological Visualizations
-
-#### 3D Persistence Surface
-![3D Surface](screenshots/11_3d_persistence_surface.png)
-
-*Three-dimensional visualization of persistence features. Axes: birth time, death time, persistence (death - birth). Points colored by persistence value. Red diagonal plane = ephemeral features (birth ≈ death).*
-
----
-
-#### Persistence Diagram
-![Persistence Diagram](screenshots/12_persistence_diagram.png)
-
-*Classic TDA visualization: birth vs death times of topological features. Points colored by dimension (H₀=blue, H₁=orange, H₂=green). Distance from diagonal = persistence (feature importance). Size ∝ persistence.*
-
----
-
-#### Persistence Barcode
-![Barcode](screenshots/13_persistence_barcode.png)
-
-*Interval representation of persistence diagrams. Each bar = one topological feature, spanning from birth to death. Separate panels for H₀ (clusters), H₁ (loops), H₂ (voids). Long bars = persistent features.*
-
----
-
-#### Topology Evolution Over Time
-![Evolution](screenshots/14_topology_evolution.png)
-
-*Time series of key topological metrics: H₀, H₁, H₂ counts and max persistence values. Red stars = anomalies (z-score > 2). Tracks structural changes in market over time.*
-
----
-
-#### Regime Timeline
-![Regime Timeline](screenshots/15_regime_timeline.png)
-
-*Color-coded timeline showing regime classification for each temporal window. Visualizes regime persistence, transitions, and distribution. Aligned with topological features for correlation analysis.*
-
----
-
-#### Betti Curves Heatmap
-![Betti Curves](screenshots/16_betti_curves_heatmap.png)
-
-*Heatmap showing evolution of Betti numbers across filtration scales and time. X-axis = time windows, Y-axis = filtration value, color intensity = number of features alive. Reveals topological complexity dynamics.*
-
----
-
-#### Interactive Dashboard
-![Dashboard](screenshots/17_interactive_dashboard.png)
-
-*Multi-panel Plotly dashboard with interactive features (zoom, pan, hover). Displays H₀, H₁, H₂ metrics, persistence comparisons, entropy evolution, and current feature counts. Exportable to HTML for web deployment.*
-
----
-
-#### 3D Point Cloud Visualization
-![Point Cloud 3D](screenshots/18_point_cloud_3d.png)
-
-*Three-dimensional projection of high-dimensional market returns using PCA. Each point = one trading day, colored by time or regime. Reveals geometric structure of market state space.*
-
----
-
-#### Analysis Summary Report
-![Summary](screenshots/19_analysis_summary.png)
-
-*Comprehensive analysis output showing key findings: topological features statistics, regime distribution, anomalies detected, cross-correlations, and interpretation. Generated automatically by `advanced_demo.py`.*
 
 ---
 
