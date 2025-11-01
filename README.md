@@ -843,10 +843,19 @@ graph TB
     DASH --> PNG
     DASH --> HTML
     
-    style YF fill:#ff9999
-    style PH fill:#99ccff
-    style RD fill:#99ff99
-    style VIS fill:#ffcc99
+    style YF fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style SP fill:#4A90E2,stroke:#2E5C8A,stroke-width:3px,color:#fff
+    style DF fill:#7B68EE,stroke:#5A4BC7,stroke-width:3px,color:#fff
+    style PC fill:#7B68EE,stroke:#5A4BC7,stroke-width:3px,color:#fff
+    style PH fill:#9B59B6,stroke:#7D3C98,stroke-width:3px,color:#fff
+    style FE fill:#50C878,stroke:#3AA860,stroke-width:3px,color:#fff
+    style RD fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#fff
+    style AD fill:#1ABC9C,stroke:#16A085,stroke-width:3px,color:#fff
+    style VIS fill:#E74C3C,stroke:#C0392B,stroke-width:3px,color:#fff
+    style DASH fill:#E67E22,stroke:#D35400,stroke-width:3px,color:#fff
+    style CSV fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#fff
+    style PNG fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#fff
+    style HTML fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#fff
 ```
 
 ### Module Dependencies
@@ -899,9 +908,20 @@ graph LR
     N --> D
     N --> E
     
-    style A fill:#e1f5ff
-    style C fill:#ffe1e1
-    style E fill:#e1ffe1
+    style A fill:#3498DB,stroke:#2E86C1,stroke-width:3px,color:#fff
+    style B fill:#9B59B6,stroke:#8E44AD,stroke-width:3px,color:#fff
+    style C fill:#E74C3C,stroke:#C0392B,stroke-width:3px,color:#fff
+    style D fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#fff
+    style E fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#fff
+    style F fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style G fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style H fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style I fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style J fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style K fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style L fill:#95A5A6,stroke:#7F8C8D,stroke-width:2px,color:#fff
+    style M fill:#1ABC9C,stroke:#16A085,stroke-width:3px,color:#fff
+    style N fill:#1ABC9C,stroke:#16A085,stroke-width:3px,color:#fff
 ```
 
 ---
