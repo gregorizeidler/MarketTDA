@@ -35,13 +35,6 @@ python main.py --tickers 200 --save     # Full analysis with outputs
 
 ---
 
-#### Persistence Landscapes
-![Persistence Landscapes](screenshots/02_persistence_landscapes.png)
-
-*Functional representation of persistence diagrams. Multiple landscape levels (λ₁, λ₂, ..., λ₅) capture the distribution of topological features across filtration scales. Used for statistical analysis and averaging of diagrams.*
-
----
-
 #### Persistence Images
 ![Persistence Images](screenshots/03_persistence_images.png)
 
@@ -55,13 +48,6 @@ python main.py --tickers 200 --save     # Full analysis with outputs
 ![Cross-Correlation](screenshots/04_cross_correlation_analysis.png)
 
 *Lagged correlations between H₀, H₁, and H₂. Identifies temporal dependencies: Does H₂(t-k) predict H₁(t)? Strong correlations at specific lags reveal leading indicators for regime changes.*
-
----
-
-#### Entropy Rate Evolution
-![Entropy Rate](screenshots/05_entropy_rate_evolution.png)
-
-*Rate of change of persistent entropy for each homology dimension. Positive rates indicate increasing topological complexity; negative rates signal simplification. Useful for detecting acceleration of structural changes.*
 
 ---
 
