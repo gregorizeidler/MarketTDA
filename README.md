@@ -2031,33 +2031,6 @@ class TopologyVisualizer:
 
 ---
 
-## 🔮 Future Work
-
-### Planned Enhancements
-
-```mermaid
-timeline
-    title Development Roadmap
-    
-    2025 Q4 : Real-time Streaming
-            : Deep Learning Integration
-            : Multi-scale Wavelets
-    
-    2026 Q1 : Options Surface TDA
-            : Cross-market Analysis
-            : Mobile App
-    
-    2026 Q2 : Zigzag Persistence
-            : Mapper Algorithm
-            : Persistent Cohomology
-    
-    2026 Q3 : Quantum Computing
-            : VR/AR Visualization
-            : Academic Publication
-```
-
----
-
 ## 📊 Analysis Modules
 
 ### Core Analysis Pipeline
