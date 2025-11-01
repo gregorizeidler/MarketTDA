@@ -73,6 +73,8 @@ python main.py --tickers 200 --save     # Full analysis with outputs
 
 ## 🎯 Overview
 
+![Project Overview](screenshots/00_project_overview.png)
+
 ### Core Innovation
 
 MarketTDA transforms financial time series analysis from pairwise correlation space (ℝ²) to topological feature space (H₀, H₁, H₂), revealing:
