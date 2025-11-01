@@ -1,0 +1,42 @@
+================================================================================
+                    🔬 ULTRA-ADVANCED TOPOLOGICAL DATA ANALYSIS 🔬
+               Research-Grade Market Regime Detection
+================================================================================
+
+================================================================================
+PHASE 1: DATA ACQUISITION
+================================================================================
+📊 Fetching S&P 500 constituents...
+✅ Found 503 S&P 500 tickers
+✅ Fetched 503 S&P 500 tickers
+
+📥 Fetching 50 tickers from Yahoo Finance...
+   Period: 2025-05-05 to 2025-11-01
+   Interval: 1d
+Downloading:   0%|          | 0/50 [00:00<?, ?it/s]Downloading:   2%|▏         | 1/50 [00:00<00:40,  1.21it/s]Downloading:   4%|▍         | 2/50 [00:01<00:25,  1.85it/s]Downloading:   6%|▌         | 3/50 [00:01<00:20,  2.31it/s]Downloading:   8%|▊         | 4/50 [00:01<00:17,  2.66it/s]Downloading:  10%|█         | 5/50 [00:02<00:15,  2.96it/s]Downloading:  12%|█▏        | 6/50 [00:02<00:14,  3.12it/s]Downloading:  14%|█▍        | 7/50 [00:02<00:16,  2.68it/s]Downloading:  16%|█▌        | 8/50 [00:03<00:18,  2.33it/s]Downloading:  18%|█▊        | 9/50 [00:03<00:15,  2.57it/s]Downloading:  20%|██        | 10/50 [00:03<00:14,  2.75it/s]Downloading:  22%|██▏       | 11/50 [00:04<00:13,  2.84it/s]Downloading:  24%|██▍       | 12/50 [00:04<00:12,  3.04it/s]Downloading:  26%|██▌       | 13/50 [00:04<00:11,  3.23it/s]Downloading:  28%|██▊       | 14/50 [00:05<00:11,  3.26it/s]Downloading:  30%|███       | 15/50 [00:05<00:10,  3.27it/s]Downloading:  32%|███▏      | 16/50 [00:05<00:10,  3.35it/s]Downloading:  34%|███▍      | 17/50 [00:06<00:09,  3.36it/s]Downloading:  36%|███▌      | 18/50 [00:06<00:09,  3.41it/s]Downloading:  38%|███▊      | 19/50 [00:06<00:09,  3.37it/s]Downloading:  40%|████      | 20/50 [00:06<00:08,  3.46it/s]Downloading:  42%|████▏     | 21/50 [00:07<00:08,  3.57it/s]Downloading:  44%|████▍     | 22/50 [00:07<00:08,  3.21it/s]Downloading:  46%|████▌     | 23/50 [00:07<00:08,  3.26it/s]Downloading:  48%|████▊     | 24/50 [00:08<00:07,  3.28it/s]Downloading:  50%|█████     | 25/50 [00:08<00:07,  3.21it/s]Downloading:  52%|█████▏    | 26/50 [00:08<00:07,  3.17it/s]Downloading:  54%|█████▍    | 27/50 [00:09<00:07,  3.09it/s]Downloading:  56%|█████▌    | 28/50 [00:09<00:06,  3.14it/s]Downloading:  58%|█████▊    | 29/50 [00:09<00:06,  3.24it/s]Downloading:  60%|██████    | 30/50 [00:09<00:06,  3.28it/s]Downloading:  62%|██████▏   | 31/50 [00:10<00:05,  3.30it/s]Downloading:  64%|██████▍   | 32/50 [00:10<00:05,  3.08it/s]Downloading:  66%|██████▌   | 33/50 [00:10<00:05,  3.18it/s]Downloading:  68%|██████▊   | 34/50 [00:11<00:04,  3.28it/s]Downloading:  70%|███████   | 35/50 [00:11<00:04,  3.25it/s]Downloading:  72%|███████▏  | 36/50 [00:11<00:04,  3.15it/s]Downloading:  74%|███████▍  | 37/50 [00:12<00:04,  3.08it/s]Downloading:  76%|███████▌  | 38/50 [00:12<00:03,  3.22it/s]Downloading:  78%|███████▊  | 39/50 [00:13<00:05,  1.96it/s]Downloading:  80%|████████  | 40/50 [00:13<00:04,  2.21it/s]Downloading:  82%|████████▏ | 41/50 [00:14<00:03,  2.51it/s]Downloading:  84%|████████▍ | 42/50 [00:14<00:02,  2.74it/s]Downloading:  86%|████████▌ | 43/50 [00:14<00:02,  2.87it/s]Downloading:  88%|████████▊ | 44/50 [00:15<00:02,  2.85it/s]Downloading:  90%|█████████ | 45/50 [00:15<00:01,  3.00it/s]Downloading:  92%|█████████▏| 46/50 [00:15<00:01,  2.78it/s]Downloading:  94%|█████████▍| 47/50 [00:16<00:01,  2.78it/s]Downloading:  96%|█████████▌| 48/50 [00:16<00:00,  2.81it/s]Downloading:  98%|█████████▊| 49/50 [00:16<00:00,  2.83it/s]Downloading: 100%|██████████| 50/50 [00:17<00:00,  2.91it/s]Downloading: 100%|██████████| 50/50 [00:17<00:00,  2.92it/s]
+Traceback (most recent call last):
+  File "/Users/gregorizeidler/yah/ultra_advanced_demo.py", line 385, in <module>
+    main()
+    ~~~~^^
+  File "/Users/gregorizeidler/yah/ultra_advanced_demo.py", line 74, in main
+    analyzer = PersistentHomologyAnalyzer(window_size=20, max_dimension=2)
+TypeError: PersistentHomologyAnalyzer.__init__() got an unexpected keyword argument 'window_size'
+✅ Successfully fetched 50 assets with 126 time periods
+
+📈 Computing log returns...
+✅ Returns computed: (125, 50)
+   Date range: 2025-05-06 00:00:00 to 2025-10-31 00:00:00
+   Mean daily return: 0.1090%
+   Mean daily volatility: 1.7884%
+
+📊 Dataset Summary:
+   • Period: 2025-05-06 to 2025-10-31
+   • Days: 125
+   • Assets: 50
+
+================================================================================
+PHASE 2: PERSISTENT HOMOLOGY COMPUTATION
+================================================================================
+
+
+❌ Error: PersistentHomologyAnalyzer.__init__() got an unexpected keyword argument 'window_size'

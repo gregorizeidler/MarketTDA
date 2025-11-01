@@ -16,6 +16,7 @@ ripser>=0.6.4
 # Interactive Visualizations
 plotly>=5.18.0
 kaleido>=0.2.1  # For plotly static image export
+pillow>=10.0.0  # For GIF animations
 
 # Network Analysis
 networkx>=3.0
